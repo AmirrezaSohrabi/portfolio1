@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Lato , monospace;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+#nav{
+    position: fixed;
+    width: 30%;
+    /* height: 7vh; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    top: 6px;
+    border-radius: 50px;
+    padding: .6rem ;
+    transition: transform 200ms;
+}
+
+#nav:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgb(213, 213, 213);
+}
+
+#nav > a[href="#"]{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 200ms,border 200ms, transform 200ms;
+    
+}
+
+#nav > a[href="#"]:hover{
+    border-bottom: 2px solid orange;
+    transform: scale(1.12);
+    color: orange;
+}
+
+#github{
+    padding: 1.5vh 0.5rem;
+    text-decoration: none;
+    font-size: 14pt;
+    color: black;
+    background-color: orange;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 200ms;
+}
+
+#github:hover{
+    transform: scale(1.04);
+}
